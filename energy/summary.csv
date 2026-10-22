@@ -1,0 +1,4 @@
+﻿"Test","Iterations","Seconds","Start_mWh","End_mWh","Delta_J","Average_W","UniqueCapacityValues","ExitCode","Quality"
+"idle","0","121.975","18270","17977","1054.8","8.648","4","0","CHECK_CSV"
+"O0","18000","337.583","17943","16965","3520.8","10.429","13","0","CHECK_CSV"
+"O3","18000","97.036","16965","16627","1216.8","12.54","5","0","CHECK_CSV"

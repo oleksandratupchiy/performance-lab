@@ -1,0 +1,1401 @@
+
+program_O0:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+0000000000001000 <_init>:
+    1000:	f3 0f 1e fa          	endbr64
+    1004:	48 83 ec 08          	sub    rsp,0x8
+    1008:	48 8b 05 e1 3f 00 00 	mov    rax,QWORD PTR [rip+0x3fe1]        # 4ff0 <__gmon_start__>
+    100f:	48 85 c0             	test   rax,rax
+    1012:	74 02                	je     1016 <_init+0x16>
+    1014:	ff d0                	call   rax
+    1016:	48 83 c4 08          	add    rsp,0x8
+    101a:	c3                   	ret
+
+Disassembly of section .plt:
+
+0000000000001020 <.plt>:
+    1020:	ff 35 32 3f 00 00    	push   QWORD PTR [rip+0x3f32]        # 4f58 <_GLOBAL_OFFSET_TABLE_+0x8>
+    1026:	ff 25 34 3f 00 00    	jmp    QWORD PTR [rip+0x3f34]        # 4f60 <_GLOBAL_OFFSET_TABLE_+0x10>
+    102c:	0f 1f 40 00          	nop    DWORD PTR [rax+0x0]
+    1030:	f3 0f 1e fa          	endbr64
+    1034:	68 00 00 00 00       	push   0x0
+    1039:	e9 e2 ff ff ff       	jmp    1020 <_init+0x20>
+    103e:	66 90                	xchg   ax,ax
+    1040:	f3 0f 1e fa          	endbr64
+    1044:	68 01 00 00 00       	push   0x1
+    1049:	e9 d2 ff ff ff       	jmp    1020 <_init+0x20>
+    104e:	66 90                	xchg   ax,ax
+    1050:	f3 0f 1e fa          	endbr64
+    1054:	68 02 00 00 00       	push   0x2
+    1059:	e9 c2 ff ff ff       	jmp    1020 <_init+0x20>
+    105e:	66 90                	xchg   ax,ax
+    1060:	f3 0f 1e fa          	endbr64
+    1064:	68 03 00 00 00       	push   0x3
+    1069:	e9 b2 ff ff ff       	jmp    1020 <_init+0x20>
+    106e:	66 90                	xchg   ax,ax
+    1070:	f3 0f 1e fa          	endbr64
+    1074:	68 04 00 00 00       	push   0x4
+    1079:	e9 a2 ff ff ff       	jmp    1020 <_init+0x20>
+    107e:	66 90                	xchg   ax,ax
+    1080:	f3 0f 1e fa          	endbr64
+    1084:	68 05 00 00 00       	push   0x5
+    1089:	e9 92 ff ff ff       	jmp    1020 <_init+0x20>
+    108e:	66 90                	xchg   ax,ax
+    1090:	f3 0f 1e fa          	endbr64
+    1094:	68 06 00 00 00       	push   0x6
+    1099:	e9 82 ff ff ff       	jmp    1020 <_init+0x20>
+    109e:	66 90                	xchg   ax,ax
+    10a0:	f3 0f 1e fa          	endbr64
+    10a4:	68 07 00 00 00       	push   0x7
+    10a9:	e9 72 ff ff ff       	jmp    1020 <_init+0x20>
+    10ae:	66 90                	xchg   ax,ax
+    10b0:	f3 0f 1e fa          	endbr64
+    10b4:	68 08 00 00 00       	push   0x8
+    10b9:	e9 62 ff ff ff       	jmp    1020 <_init+0x20>
+    10be:	66 90                	xchg   ax,ax
+    10c0:	f3 0f 1e fa          	endbr64
+    10c4:	68 09 00 00 00       	push   0x9
+    10c9:	e9 52 ff ff ff       	jmp    1020 <_init+0x20>
+    10ce:	66 90                	xchg   ax,ax
+    10d0:	f3 0f 1e fa          	endbr64
+    10d4:	68 0a 00 00 00       	push   0xa
+    10d9:	e9 42 ff ff ff       	jmp    1020 <_init+0x20>
+    10de:	66 90                	xchg   ax,ax
+    10e0:	f3 0f 1e fa          	endbr64
+    10e4:	68 0b 00 00 00       	push   0xb
+    10e9:	e9 32 ff ff ff       	jmp    1020 <_init+0x20>
+    10ee:	66 90                	xchg   ax,ax
+    10f0:	f3 0f 1e fa          	endbr64
+    10f4:	68 0c 00 00 00       	push   0xc
+    10f9:	e9 22 ff ff ff       	jmp    1020 <_init+0x20>
+    10fe:	66 90                	xchg   ax,ax
+    1100:	f3 0f 1e fa          	endbr64
+    1104:	68 0d 00 00 00       	push   0xd
+    1109:	e9 12 ff ff ff       	jmp    1020 <_init+0x20>
+    110e:	66 90                	xchg   ax,ax
+
+Disassembly of section .plt.got:
+
+0000000000001110 <__cxa_finalize@plt>:
+    1110:	f3 0f 1e fa          	endbr64
+    1114:	ff 25 be 3e 00 00    	jmp    QWORD PTR [rip+0x3ebe]        # 4fd8 <__cxa_finalize@GLIBC_2.2.5>
+    111a:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+
+Disassembly of section .plt.sec:
+
+0000000000001120 <std::__glibcxx_assert_fail(char const*, int, char const*, char const*)@plt>:
+    1120:	f3 0f 1e fa          	endbr64
+    1124:	ff 25 3e 3e 00 00    	jmp    QWORD PTR [rip+0x3e3e]        # 4f68 <std::__glibcxx_assert_fail(char const*, int, char const*, char const*)@GLIBCXX_3.4.30>
+    112a:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001130 <std::__throw_bad_alloc()@plt>:
+    1130:	f3 0f 1e fa          	endbr64
+    1134:	ff 25 36 3e 00 00    	jmp    QWORD PTR [rip+0x3e36]        # 4f70 <std::__throw_bad_alloc()@GLIBCXX_3.4>
+    113a:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001140 <std::__throw_length_error(char const*)@plt>:
+    1140:	f3 0f 1e fa          	endbr64
+    1144:	ff 25 2e 3e 00 00    	jmp    QWORD PTR [rip+0x3e2e]        # 4f78 <std::__throw_length_error(char const*)@GLIBCXX_3.4>
+    114a:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001150 <std::__throw_bad_array_new_length()@plt>:
+    1150:	f3 0f 1e fa          	endbr64
+    1154:	ff 25 26 3e 00 00    	jmp    QWORD PTR [rip+0x3e26]        # 4f80 <std::__throw_bad_array_new_length()@GLIBCXX_3.4.29>
+    115a:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001160 <sqrt@plt>:
+    1160:	f3 0f 1e fa          	endbr64
+    1164:	ff 25 1e 3e 00 00    	jmp    QWORD PTR [rip+0x3e1e]        # 4f88 <sqrt@GLIBC_2.2.5>
+    116a:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001170 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>:
+    1170:	f3 0f 1e fa          	endbr64
+    1174:	ff 25 16 3e 00 00    	jmp    QWORD PTR [rip+0x3e16]        # 4f90 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@GLIBCXX_3.4>
+    117a:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001180 <operator new(unsigned long)@plt>:
+    1180:	f3 0f 1e fa          	endbr64
+    1184:	ff 25 0e 3e 00 00    	jmp    QWORD PTR [rip+0x3e0e]        # 4f98 <operator new(unsigned long)@GLIBCXX_3.4>
+    118a:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000001190 <operator delete(void*, unsigned long)@plt>:
+    1190:	f3 0f 1e fa          	endbr64
+    1194:	ff 25 06 3e 00 00    	jmp    QWORD PTR [rip+0x3e06]        # 4fa0 <operator delete(void*, unsigned long)@CXXABI_1.3.9>
+    119a:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+
+00000000000011a0 <__stack_chk_fail@plt>:
+    11a0:	f3 0f 1e fa          	endbr64
+    11a4:	ff 25 fe 3d 00 00    	jmp    QWORD PTR [rip+0x3dfe]        # 4fa8 <__stack_chk_fail@GLIBC_2.4>
+    11aa:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+
+00000000000011b0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char)@plt>:
+    11b0:	f3 0f 1e fa          	endbr64
+    11b4:	ff 25 f6 3d 00 00    	jmp    QWORD PTR [rip+0x3df6]        # 4fb0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char)@GLIBCXX_3.4>
+    11ba:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+
+00000000000011c0 <std::chrono::_V2::steady_clock::now()@plt>:
+    11c0:	f3 0f 1e fa          	endbr64
+    11c4:	ff 25 ee 3d 00 00    	jmp    QWORD PTR [rip+0x3dee]        # 4fb8 <std::chrono::_V2::steady_clock::now()@GLIBCXX_3.4.19>
+    11ca:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+
+00000000000011d0 <atoi@plt>:
+    11d0:	f3 0f 1e fa          	endbr64
+    11d4:	ff 25 e6 3d 00 00    	jmp    QWORD PTR [rip+0x3de6]        # 4fc0 <atoi@GLIBC_2.2.5>
+    11da:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+
+00000000000011e0 <_Unwind_Resume@plt>:
+    11e0:	f3 0f 1e fa          	endbr64
+    11e4:	ff 25 de 3d 00 00    	jmp    QWORD PTR [rip+0x3dde]        # 4fc8 <_Unwind_Resume@GCC_3.0>
+    11ea:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+
+00000000000011f0 <std::ostream::operator<<(double)@plt>:
+    11f0:	f3 0f 1e fa          	endbr64
+    11f4:	ff 25 d6 3d 00 00    	jmp    QWORD PTR [rip+0x3dd6]        # 4fd0 <std::ostream::operator<<(double)@GLIBCXX_3.4>
+    11fa:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+
+Disassembly of section .text:
+
+0000000000001200 <_start>:
+    1200:	f3 0f 1e fa          	endbr64
+    1204:	31 ed                	xor    ebp,ebp
+    1206:	49 89 d1             	mov    r9,rdx
+    1209:	5e                   	pop    rsi
+    120a:	48 89 e2             	mov    rdx,rsp
+    120d:	48 83 e4 f0          	and    rsp,0xfffffffffffffff0
+    1211:	50                   	push   rax
+    1212:	54                   	push   rsp
+    1213:	45 31 c0             	xor    r8d,r8d
+    1216:	31 c9                	xor    ecx,ecx
+    1218:	48 8d 3d 4a 01 00 00 	lea    rdi,[rip+0x14a]        # 1369 <main>
+    121f:	ff 15 bb 3d 00 00    	call   QWORD PTR [rip+0x3dbb]        # 4fe0 <__libc_start_main@GLIBC_2.34>
+    1225:	f4                   	hlt
+    1226:	66 2e 0f 1f 84 00 00 	cs nop WORD PTR [rax+rax*1+0x0]
+    122d:	00 00 00 
+
+0000000000001230 <deregister_tm_clones>:
+    1230:	48 8d 3d e1 3d 00 00 	lea    rdi,[rip+0x3de1]        # 5018 <__TMC_END__>
+    1237:	48 8d 05 da 3d 00 00 	lea    rax,[rip+0x3dda]        # 5018 <__TMC_END__>
+    123e:	48 39 f8             	cmp    rax,rdi
+    1241:	74 15                	je     1258 <deregister_tm_clones+0x28>
+    1243:	48 8b 05 9e 3d 00 00 	mov    rax,QWORD PTR [rip+0x3d9e]        # 4fe8 <_ITM_deregisterTMCloneTable>
+    124a:	48 85 c0             	test   rax,rax
+    124d:	74 09                	je     1258 <deregister_tm_clones+0x28>
+    124f:	ff e0                	jmp    rax
+    1251:	0f 1f 80 00 00 00 00 	nop    DWORD PTR [rax+0x0]
+    1258:	c3                   	ret
+    1259:	0f 1f 80 00 00 00 00 	nop    DWORD PTR [rax+0x0]
+
+0000000000001260 <register_tm_clones>:
+    1260:	48 8d 3d b1 3d 00 00 	lea    rdi,[rip+0x3db1]        # 5018 <__TMC_END__>
+    1267:	48 8d 35 aa 3d 00 00 	lea    rsi,[rip+0x3daa]        # 5018 <__TMC_END__>
+    126e:	48 29 fe             	sub    rsi,rdi
+    1271:	48 89 f0             	mov    rax,rsi
+    1274:	48 c1 ee 3f          	shr    rsi,0x3f
+    1278:	48 c1 f8 03          	sar    rax,0x3
+    127c:	48 01 c6             	add    rsi,rax
+    127f:	48 d1 fe             	sar    rsi,1
+    1282:	74 14                	je     1298 <register_tm_clones+0x38>
+    1284:	48 8b 05 6d 3d 00 00 	mov    rax,QWORD PTR [rip+0x3d6d]        # 4ff8 <_ITM_registerTMCloneTable>
+    128b:	48 85 c0             	test   rax,rax
+    128e:	74 08                	je     1298 <register_tm_clones+0x38>
+    1290:	ff e0                	jmp    rax
+    1292:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+    1298:	c3                   	ret
+    1299:	0f 1f 80 00 00 00 00 	nop    DWORD PTR [rax+0x0]
+
+00000000000012a0 <__do_global_dtors_aux>:
+    12a0:	f3 0f 1e fa          	endbr64
+    12a4:	80 3d a5 3e 00 00 00 	cmp    BYTE PTR [rip+0x3ea5],0x0        # 5150 <completed.0>
+    12ab:	75 2b                	jne    12d8 <__do_global_dtors_aux+0x38>
+    12ad:	55                   	push   rbp
+    12ae:	48 83 3d 22 3d 00 00 	cmp    QWORD PTR [rip+0x3d22],0x0        # 4fd8 <__cxa_finalize@GLIBC_2.2.5>
+    12b5:	00 
+    12b6:	48 89 e5             	mov    rbp,rsp
+    12b9:	74 0c                	je     12c7 <__do_global_dtors_aux+0x27>
+    12bb:	48 8b 3d 46 3d 00 00 	mov    rdi,QWORD PTR [rip+0x3d46]        # 5008 <__dso_handle>
+    12c2:	e8 49 fe ff ff       	call   1110 <__cxa_finalize@plt>
+    12c7:	e8 64 ff ff ff       	call   1230 <deregister_tm_clones>
+    12cc:	c6 05 7d 3e 00 00 01 	mov    BYTE PTR [rip+0x3e7d],0x1        # 5150 <completed.0>
+    12d3:	5d                   	pop    rbp
+    12d4:	c3                   	ret
+    12d5:	0f 1f 00             	nop    DWORD PTR [rax]
+    12d8:	c3                   	ret
+    12d9:	0f 1f 80 00 00 00 00 	nop    DWORD PTR [rax+0x0]
+
+00000000000012e0 <frame_dummy>:
+    12e0:	f3 0f 1e fa          	endbr64
+    12e4:	e9 77 ff ff ff       	jmp    1260 <register_tm_clones>
+
+00000000000012e9 <processArray(std::vector<double, std::allocator<double> > const&)>:
+    12e9:	f3 0f 1e fa          	endbr64
+    12ed:	55                   	push   rbp
+    12ee:	48 89 e5             	mov    rbp,rsp
+    12f1:	48 83 ec 20          	sub    rsp,0x20
+    12f5:	48 89 7d e8          	mov    QWORD PTR [rbp-0x18],rdi
+    12f9:	66 0f ef c0          	pxor   xmm0,xmm0
+    12fd:	f2 0f 11 45 f0       	movsd  QWORD PTR [rbp-0x10],xmm0
+    1302:	48 c7 45 f8 00 00 00 	mov    QWORD PTR [rbp-0x8],0x0
+    1309:	00 
+    130a:	eb 3f                	jmp    134b <processArray(std::vector<double, std::allocator<double> > const&)+0x62>
+    130c:	48 8b 55 f8          	mov    rdx,QWORD PTR [rbp-0x8]
+    1310:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1314:	48 89 d6             	mov    rsi,rdx
+    1317:	48 89 c7             	mov    rdi,rax
+    131a:	e8 09 04 00 00       	call   1728 <std::vector<double, std::allocator<double> >::operator[](unsigned long) const>
+    131f:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    1322:	66 48 0f 6e c0       	movq   xmm0,rax
+    1327:	e8 34 fe ff ff       	call   1160 <sqrt@plt>
+    132c:	f2 0f 10 0d 04 1f 00 	movsd  xmm1,QWORD PTR [rip+0x1f04]        # 3238 <_IO_stdin_used+0x238>
+    1333:	00 
+    1334:	f2 0f 59 c1          	mulsd  xmm0,xmm1
+    1338:	f2 0f 10 4d f0       	movsd  xmm1,QWORD PTR [rbp-0x10]
+    133d:	f2 0f 58 c1          	addsd  xmm0,xmm1
+    1341:	f2 0f 11 45 f0       	movsd  QWORD PTR [rbp-0x10],xmm0
+    1346:	48 83 45 f8 01       	add    QWORD PTR [rbp-0x8],0x1
+    134b:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    134f:	48 89 c7             	mov    rdi,rax
+    1352:	e8 9d 03 00 00       	call   16f4 <std::vector<double, std::allocator<double> >::size() const>
+    1357:	48 39 45 f8          	cmp    QWORD PTR [rbp-0x8],rax
+    135b:	0f 92 c0             	setb   al
+    135e:	84 c0                	test   al,al
+    1360:	75 aa                	jne    130c <processArray(std::vector<double, std::allocator<double> > const&)+0x23>
+    1362:	f2 0f 10 45 f0       	movsd  xmm0,QWORD PTR [rbp-0x10]
+    1367:	c9                   	leave
+    1368:	c3                   	ret
+
+0000000000001369 <main>:
+    1369:	f3 0f 1e fa          	endbr64
+    136d:	55                   	push   rbp
+    136e:	48 89 e5             	mov    rbp,rsp
+    1371:	53                   	push   rbx
+    1372:	48 81 ec 98 00 00 00 	sub    rsp,0x98
+    1379:	89 bd 7c ff ff ff    	mov    DWORD PTR [rbp-0x84],edi
+    137f:	48 89 b5 70 ff ff ff 	mov    QWORD PTR [rbp-0x90],rsi
+    1386:	64 48 8b 04 25 28 00 	mov    rax,QWORD PTR fs:0x28
+    138d:	00 00 
+    138f:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+    1393:	31 c0                	xor    eax,eax
+    1395:	48 c7 45 c0 40 42 0f 	mov    QWORD PTR [rbp-0x40],0xf4240
+    139c:	00 
+    139d:	83 bd 7c ff ff ff 01 	cmp    DWORD PTR [rbp-0x84],0x1
+    13a4:	7e 1b                	jle    13c1 <main+0x58>
+    13a6:	48 8b 85 70 ff ff ff 	mov    rax,QWORD PTR [rbp-0x90]
+    13ad:	48 83 c0 08          	add    rax,0x8
+    13b1:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    13b4:	48 89 c7             	mov    rdi,rax
+    13b7:	e8 14 fe ff ff       	call   11d0 <atoi@plt>
+    13bc:	89 45 88             	mov    DWORD PTR [rbp-0x78],eax
+    13bf:	eb 07                	jmp    13c8 <main+0x5f>
+    13c1:	c7 45 88 e8 03 00 00 	mov    DWORD PTR [rbp-0x78],0x3e8
+    13c8:	48 8d 45 a8          	lea    rax,[rbp-0x58]
+    13cc:	48 89 45 c8          	mov    QWORD PTR [rbp-0x38],rax
+    13d0:	90                   	nop
+    13d1:	90                   	nop
+    13d2:	48 8d 55 a8          	lea    rdx,[rbp-0x58]
+    13d6:	48 8d 45 d0          	lea    rax,[rbp-0x30]
+    13da:	be 40 42 0f 00       	mov    esi,0xf4240
+    13df:	48 89 c7             	mov    rdi,rax
+    13e2:	e8 ab 03 00 00       	call   1792 <std::vector<double, std::allocator<double> >::vector(unsigned long, std::allocator<double> const&)>
+    13e7:	48 8d 45 a8          	lea    rax,[rbp-0x58]
+    13eb:	48 89 c7             	mov    rdi,rax
+    13ee:	e8 eb 05 00 00       	call   19de <std::__new_allocator<double>::~__new_allocator()>
+    13f3:	90                   	nop
+    13f4:	48 c7 45 b0 00 00 00 	mov    QWORD PTR [rbp-0x50],0x0
+    13fb:	00 
+    13fc:	eb 65                	jmp    1463 <main+0xfa>
+    13fe:	48 8b 45 b0          	mov    rax,QWORD PTR [rbp-0x50]
+    1402:	48 83 c0 01          	add    rax,0x1
+    1406:	48 85 c0             	test   rax,rax
+    1409:	78 13                	js     141e <main+0xb5>
+    140b:	66 0f ef d2          	pxor   xmm2,xmm2
+    140f:	f2 48 0f 2a d0       	cvtsi2sd xmm2,rax
+    1414:	f2 0f 11 95 68 ff ff 	movsd  QWORD PTR [rbp-0x98],xmm2
+    141b:	ff 
+    141c:	eb 21                	jmp    143f <main+0xd6>
+    141e:	48 89 c2             	mov    rdx,rax
+    1421:	48 d1 ea             	shr    rdx,1
+    1424:	83 e0 01             	and    eax,0x1
+    1427:	48 09 c2             	or     rdx,rax
+    142a:	66 0f ef c0          	pxor   xmm0,xmm0
+    142e:	f2 48 0f 2a c2       	cvtsi2sd xmm0,rdx
+    1433:	f2 0f 58 c0          	addsd  xmm0,xmm0
+    1437:	f2 0f 11 85 68 ff ff 	movsd  QWORD PTR [rbp-0x98],xmm0
+    143e:	ff 
+    143f:	48 8b 55 b0          	mov    rdx,QWORD PTR [rbp-0x50]
+    1443:	48 8d 45 d0          	lea    rax,[rbp-0x30]
+    1447:	48 89 d6             	mov    rsi,rdx
+    144a:	48 89 c7             	mov    rdi,rax
+    144d:	e8 18 04 00 00       	call   186a <std::vector<double, std::allocator<double> >::operator[](unsigned long)>
+    1452:	f2 0f 10 9d 68 ff ff 	movsd  xmm3,QWORD PTR [rbp-0x98]
+    1459:	ff 
+    145a:	f2 0f 11 18          	movsd  QWORD PTR [rax],xmm3
+    145e:	48 83 45 b0 01       	add    QWORD PTR [rbp-0x50],0x1
+    1463:	48 81 7d b0 3f 42 0f 	cmp    QWORD PTR [rbp-0x50],0xf423f
+    146a:	00 
+    146b:	76 91                	jbe    13fe <main+0x95>
+    146d:	e8 4e fd ff ff       	call   11c0 <std::chrono::_V2::steady_clock::now()@plt>
+    1472:	48 89 45 90          	mov    QWORD PTR [rbp-0x70],rax
+    1476:	66 0f ef c0          	pxor   xmm0,xmm0
+    147a:	f2 0f 11 45 b8       	movsd  QWORD PTR [rbp-0x48],xmm0
+    147f:	c7 45 8c 00 00 00 00 	mov    DWORD PTR [rbp-0x74],0x0
+    1486:	eb 1e                	jmp    14a6 <main+0x13d>
+    1488:	48 8d 45 d0          	lea    rax,[rbp-0x30]
+    148c:	48 89 c7             	mov    rdi,rax
+    148f:	e8 55 fe ff ff       	call   12e9 <processArray(std::vector<double, std::allocator<double> > const&)>
+    1494:	f2 0f 10 4d b8       	movsd  xmm1,QWORD PTR [rbp-0x48]
+    1499:	f2 0f 58 c1          	addsd  xmm0,xmm1
+    149d:	f2 0f 11 45 b8       	movsd  QWORD PTR [rbp-0x48],xmm0
+    14a2:	83 45 8c 01          	add    DWORD PTR [rbp-0x74],0x1
+    14a6:	8b 45 8c             	mov    eax,DWORD PTR [rbp-0x74]
+    14a9:	3b 45 88             	cmp    eax,DWORD PTR [rbp-0x78]
+    14ac:	7c da                	jl     1488 <main+0x11f>
+    14ae:	e8 0d fd ff ff       	call   11c0 <std::chrono::_V2::steady_clock::now()@plt>
+    14b3:	48 89 45 98          	mov    QWORD PTR [rbp-0x68],rax
+    14b7:	48 8d 55 90          	lea    rdx,[rbp-0x70]
+    14bb:	48 8d 45 98          	lea    rax,[rbp-0x68]
+    14bf:	48 89 d6             	mov    rsi,rdx
+    14c2:	48 89 c7             	mov    rdi,rax
+    14c5:	e8 a7 01 00 00       	call   1671 <std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::steady_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&)>
+    14ca:	48 89 45 a8          	mov    QWORD PTR [rbp-0x58],rax
+    14ce:	48 8d 55 a8          	lea    rdx,[rbp-0x58]
+    14d2:	48 8d 45 a0          	lea    rax,[rbp-0x60]
+    14d6:	48 89 d6             	mov    rsi,rdx
+    14d9:	48 89 c7             	mov    rdi,rax
+    14dc:	e8 f3 03 00 00       	call   18d4 <std::chrono::duration<double, std::ratio<1l, 1l> >::duration<long, std::ratio<1l, 1000000000l>, void>(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)>
+    14e1:	48 8d 15 20 1b 00 00 	lea    rdx,[rip+0x1b20]        # 3008 <_IO_stdin_used+0x8>
+    14e8:	48 8d 05 51 3b 00 00 	lea    rax,[rip+0x3b51]        # 5040 <std::cout@GLIBCXX_3.4>
+    14ef:	48 89 d6             	mov    rsi,rdx
+    14f2:	48 89 c7             	mov    rdi,rax
+    14f5:	e8 76 fc ff ff       	call   1170 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+    14fa:	48 89 c2             	mov    rdx,rax
+    14fd:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    1501:	66 48 0f 6e c0       	movq   xmm0,rax
+    1506:	48 89 d7             	mov    rdi,rdx
+    1509:	e8 e2 fc ff ff       	call   11f0 <std::ostream::operator<<(double)@plt>
+    150e:	be 0a 00 00 00       	mov    esi,0xa
+    1513:	48 89 c7             	mov    rdi,rax
+    1516:	e8 95 fc ff ff       	call   11b0 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char)@plt>
+    151b:	48 8d 15 ef 1a 00 00 	lea    rdx,[rip+0x1aef]        # 3011 <_IO_stdin_used+0x11>
+    1522:	48 8d 05 17 3b 00 00 	lea    rax,[rip+0x3b17]        # 5040 <std::cout@GLIBCXX_3.4>
+    1529:	48 89 d6             	mov    rsi,rdx
+    152c:	48 89 c7             	mov    rdi,rax
+    152f:	e8 3c fc ff ff       	call   1170 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+    1534:	48 89 c3             	mov    rbx,rax
+    1537:	48 8d 45 a0          	lea    rax,[rbp-0x60]
+    153b:	48 89 c7             	mov    rdi,rax
+    153e:	e8 85 04 00 00       	call   19c8 <std::chrono::duration<double, std::ratio<1l, 1l> >::count() const>
+    1543:	66 48 0f 7e c0       	movq   rax,xmm0
+    1548:	66 48 0f 6e c0       	movq   xmm0,rax
+    154d:	48 89 df             	mov    rdi,rbx
+    1550:	e8 9b fc ff ff       	call   11f0 <std::ostream::operator<<(double)@plt>
+    1555:	48 89 c2             	mov    rdx,rax
+    1558:	48 8d 05 c3 1a 00 00 	lea    rax,[rip+0x1ac3]        # 3022 <_IO_stdin_used+0x22>
+    155f:	48 89 c6             	mov    rsi,rax
+    1562:	48 89 d7             	mov    rdi,rdx
+    1565:	e8 06 fc ff ff       	call   1170 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)@plt>
+    156a:	bb 00 00 00 00       	mov    ebx,0x0
+    156f:	48 8d 45 d0          	lea    rax,[rbp-0x30]
+    1573:	48 89 c7             	mov    rdi,rax
+    1576:	e8 95 02 00 00       	call   1810 <std::vector<double, std::allocator<double> >::~vector()>
+    157b:	89 d8                	mov    eax,ebx
+    157d:	48 8b 55 e8          	mov    rdx,QWORD PTR [rbp-0x18]
+    1581:	64 48 2b 14 25 28 00 	sub    rdx,QWORD PTR fs:0x28
+    1588:	00 00 
+    158a:	74 6c                	je     15f8 <main+0x28f>
+    158c:	eb 65                	jmp    15f3 <main+0x28a>
+    158e:	f3 0f 1e fa          	endbr64
+    1592:	48 89 c3             	mov    rbx,rax
+    1595:	48 8d 45 a8          	lea    rax,[rbp-0x58]
+    1599:	48 89 c7             	mov    rdi,rax
+    159c:	e8 3d 04 00 00       	call   19de <std::__new_allocator<double>::~__new_allocator()>
+    15a1:	90                   	nop
+    15a2:	48 89 d8             	mov    rax,rbx
+    15a5:	48 8b 55 e8          	mov    rdx,QWORD PTR [rbp-0x18]
+    15a9:	64 48 2b 14 25 28 00 	sub    rdx,QWORD PTR fs:0x28
+    15b0:	00 00 
+    15b2:	74 05                	je     15b9 <main+0x250>
+    15b4:	e8 e7 fb ff ff       	call   11a0 <__stack_chk_fail@plt>
+    15b9:	48 89 c7             	mov    rdi,rax
+    15bc:	e8 1f fc ff ff       	call   11e0 <_Unwind_Resume@plt>
+    15c1:	f3 0f 1e fa          	endbr64
+    15c5:	48 89 c3             	mov    rbx,rax
+    15c8:	48 8d 45 d0          	lea    rax,[rbp-0x30]
+    15cc:	48 89 c7             	mov    rdi,rax
+    15cf:	e8 3c 02 00 00       	call   1810 <std::vector<double, std::allocator<double> >::~vector()>
+    15d4:	48 89 d8             	mov    rax,rbx
+    15d7:	48 8b 55 e8          	mov    rdx,QWORD PTR [rbp-0x18]
+    15db:	64 48 2b 14 25 28 00 	sub    rdx,QWORD PTR fs:0x28
+    15e2:	00 00 
+    15e4:	74 05                	je     15eb <main+0x282>
+    15e6:	e8 b5 fb ff ff       	call   11a0 <__stack_chk_fail@plt>
+    15eb:	48 89 c7             	mov    rdi,rax
+    15ee:	e8 ed fb ff ff       	call   11e0 <_Unwind_Resume@plt>
+    15f3:	e8 a8 fb ff ff       	call   11a0 <__stack_chk_fail@plt>
+    15f8:	48 8b 5d f8          	mov    rbx,QWORD PTR [rbp-0x8]
+    15fc:	c9                   	leave
+    15fd:	c3                   	ret
+
+00000000000015fe <operator new(unsigned long, void*)>:
+    15fe:	f3 0f 1e fa          	endbr64
+    1602:	55                   	push   rbp
+    1603:	48 89 e5             	mov    rbp,rsp
+    1606:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    160a:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+    160e:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1612:	5d                   	pop    rbp
+    1613:	c3                   	ret
+
+0000000000001614 <operator delete(void*, void*)>:
+    1614:	f3 0f 1e fa          	endbr64
+    1618:	55                   	push   rbp
+    1619:	48 89 e5             	mov    rbp,rsp
+    161c:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1620:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+    1624:	90                   	nop
+    1625:	5d                   	pop    rbp
+    1626:	c3                   	ret
+
+0000000000001627 <std::__size_to_integer(unsigned long)>:
+    1627:	f3 0f 1e fa          	endbr64
+    162b:	55                   	push   rbp
+    162c:	48 89 e5             	mov    rbp,rsp
+    162f:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1633:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1637:	5d                   	pop    rbp
+    1638:	c3                   	ret
+    1639:	90                   	nop
+
+000000000000163a <std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&)>:
+    163a:	f3 0f 1e fa          	endbr64
+    163e:	55                   	push   rbp
+    163f:	48 89 e5             	mov    rbp,rsp
+    1642:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1646:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+    164a:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    164e:	48 8b 10             	mov    rdx,QWORD PTR [rax]
+    1651:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1655:	48 89 10             	mov    QWORD PTR [rax],rdx
+    1658:	90                   	nop
+    1659:	5d                   	pop    rbp
+    165a:	c3                   	ret
+    165b:	90                   	nop
+
+000000000000165c <std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const>:
+    165c:	f3 0f 1e fa          	endbr64
+    1660:	55                   	push   rbp
+    1661:	48 89 e5             	mov    rbp,rsp
+    1664:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1668:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    166c:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    166f:	5d                   	pop    rbp
+    1670:	c3                   	ret
+
+0000000000001671 <std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::steady_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&)>:
+    1671:	f3 0f 1e fa          	endbr64
+    1675:	55                   	push   rbp
+    1676:	48 89 e5             	mov    rbp,rsp
+    1679:	48 83 ec 30          	sub    rsp,0x30
+    167d:	48 89 7d d8          	mov    QWORD PTR [rbp-0x28],rdi
+    1681:	48 89 75 d0          	mov    QWORD PTR [rbp-0x30],rsi
+    1685:	64 48 8b 04 25 28 00 	mov    rax,QWORD PTR fs:0x28
+    168c:	00 00 
+    168e:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+    1692:	31 c0                	xor    eax,eax
+    1694:	48 8b 45 d0          	mov    rax,QWORD PTR [rbp-0x30]
+    1698:	48 89 c7             	mov    rdi,rax
+    169b:	e8 3e 00 00 00       	call   16de <std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_since_epoch() const>
+    16a0:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+    16a4:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    16a8:	48 89 c7             	mov    rdi,rax
+    16ab:	e8 2e 00 00 00       	call   16de <std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_since_epoch() const>
+    16b0:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+    16b4:	48 8d 55 f0          	lea    rdx,[rbp-0x10]
+    16b8:	48 8d 45 e8          	lea    rax,[rbp-0x18]
+    16bc:	48 89 d6             	mov    rsi,rdx
+    16bf:	48 89 c7             	mov    rdi,rax
+    16c2:	e8 70 02 00 00       	call   1937 <std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)>
+    16c7:	48 8b 55 f8          	mov    rdx,QWORD PTR [rbp-0x8]
+    16cb:	64 48 2b 14 25 28 00 	sub    rdx,QWORD PTR fs:0x28
+    16d2:	00 00 
+    16d4:	74 05                	je     16db <std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::steady_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&)+0x6a>
+    16d6:	e8 c5 fa ff ff       	call   11a0 <__stack_chk_fail@plt>
+    16db:	c9                   	leave
+    16dc:	c3                   	ret
+    16dd:	90                   	nop
+
+00000000000016de <std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_since_epoch() const>:
+    16de:	f3 0f 1e fa          	endbr64
+    16e2:	55                   	push   rbp
+    16e3:	48 89 e5             	mov    rbp,rsp
+    16e6:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    16ea:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    16ee:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    16f1:	5d                   	pop    rbp
+    16f2:	c3                   	ret
+    16f3:	90                   	nop
+
+00000000000016f4 <std::vector<double, std::allocator<double> >::size() const>:
+    16f4:	f3 0f 1e fa          	endbr64
+    16f8:	55                   	push   rbp
+    16f9:	48 89 e5             	mov    rbp,rsp
+    16fc:	48 89 7d e8          	mov    QWORD PTR [rbp-0x18],rdi
+    1700:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1704:	48 8b 50 08          	mov    rdx,QWORD PTR [rax+0x8]
+    1708:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    170c:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    170f:	48 29 c2             	sub    rdx,rax
+    1712:	48 89 d0             	mov    rax,rdx
+    1715:	48 c1 f8 03          	sar    rax,0x3
+    1719:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+    171d:	48 83 7d f8 00       	cmp    QWORD PTR [rbp-0x8],0x0
+    1722:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1726:	5d                   	pop    rbp
+    1727:	c3                   	ret
+
+0000000000001728 <std::vector<double, std::allocator<double> >::operator[](unsigned long) const>:
+    1728:	f3 0f 1e fa          	endbr64
+    172c:	55                   	push   rbp
+    172d:	48 89 e5             	mov    rbp,rsp
+    1730:	48 83 ec 10          	sub    rsp,0x10
+    1734:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1738:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+    173c:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1740:	48 89 c7             	mov    rdi,rax
+    1743:	e8 ac ff ff ff       	call   16f4 <std::vector<double, std::allocator<double> >::size() const>
+    1748:	48 39 45 f0          	cmp    QWORD PTR [rbp-0x10],rax
+    174c:	0f 93 c0             	setae  al
+    174f:	0f b6 c0             	movzx  eax,al
+    1752:	48 85 c0             	test   rax,rax
+    1755:	0f 95 c0             	setne  al
+    1758:	84 c0                	test   al,al
+    175a:	74 22                	je     177e <std::vector<double, std::allocator<double> >::operator[](unsigned long) const+0x56>
+    175c:	48 8d 0d c9 18 00 00 	lea    rcx,[rip+0x18c9]        # 302c <_IO_stdin_used+0x2c>
+    1763:	48 8d 15 d6 18 00 00 	lea    rdx,[rip+0x18d6]        # 3040 <_IO_stdin_used+0x40>
+    176a:	48 8d 05 a7 19 00 00 	lea    rax,[rip+0x19a7]        # 3118 <_IO_stdin_used+0x118>
+    1771:	be 02 05 00 00       	mov    esi,0x502
+    1776:	48 89 c7             	mov    rdi,rax
+    1779:	e8 a2 f9 ff ff       	call   1120 <std::__glibcxx_assert_fail(char const*, int, char const*, char const*)@plt>
+    177e:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1782:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    1785:	48 8b 55 f0          	mov    rdx,QWORD PTR [rbp-0x10]
+    1789:	48 c1 e2 03          	shl    rdx,0x3
+    178d:	48 01 d0             	add    rax,rdx
+    1790:	c9                   	leave
+    1791:	c3                   	ret
+
+0000000000001792 <std::vector<double, std::allocator<double> >::vector(unsigned long, std::allocator<double> const&)>:
+    1792:	f3 0f 1e fa          	endbr64
+    1796:	55                   	push   rbp
+    1797:	48 89 e5             	mov    rbp,rsp
+    179a:	53                   	push   rbx
+    179b:	48 83 ec 28          	sub    rsp,0x28
+    179f:	48 89 7d e8          	mov    QWORD PTR [rbp-0x18],rdi
+    17a3:	48 89 75 e0          	mov    QWORD PTR [rbp-0x20],rsi
+    17a7:	48 89 55 d8          	mov    QWORD PTR [rbp-0x28],rdx
+    17ab:	48 8b 5d e8          	mov    rbx,QWORD PTR [rbp-0x18]
+    17af:	48 8b 55 d8          	mov    rdx,QWORD PTR [rbp-0x28]
+    17b3:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+    17b7:	48 89 d6             	mov    rsi,rdx
+    17ba:	48 89 c7             	mov    rdi,rax
+    17bd:	e8 2b 02 00 00       	call   19ed <std::vector<double, std::allocator<double> >::_S_check_init_len(unsigned long, std::allocator<double> const&)>
+    17c2:	48 89 c1             	mov    rcx,rax
+    17c5:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    17c9:	48 89 c2             	mov    rdx,rax
+    17cc:	48 89 ce             	mov    rsi,rcx
+    17cf:	48 89 df             	mov    rdi,rbx
+    17d2:	e8 e1 02 00 00       	call   1ab8 <std::_Vector_base<double, std::allocator<double> >::_Vector_base(unsigned long, std::allocator<double> const&)>
+    17d7:	48 8b 55 e0          	mov    rdx,QWORD PTR [rbp-0x20]
+    17db:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    17df:	48 89 d6             	mov    rsi,rdx
+    17e2:	48 89 c7             	mov    rdi,rax
+    17e5:	e8 86 03 00 00       	call   1b70 <std::vector<double, std::allocator<double> >::_M_default_initialize(unsigned long)>
+    17ea:	eb 1e                	jmp    180a <std::vector<double, std::allocator<double> >::vector(unsigned long, std::allocator<double> const&)+0x78>
+    17ec:	f3 0f 1e fa          	endbr64
+    17f0:	48 89 c3             	mov    rbx,rax
+    17f3:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    17f7:	48 89 c7             	mov    rdi,rax
+    17fa:	e8 1f 03 00 00       	call   1b1e <std::_Vector_base<double, std::allocator<double> >::~_Vector_base()>
+    17ff:	48 89 d8             	mov    rax,rbx
+    1802:	48 89 c7             	mov    rdi,rax
+    1805:	e8 d6 f9 ff ff       	call   11e0 <_Unwind_Resume@plt>
+    180a:	48 8b 5d f8          	mov    rbx,QWORD PTR [rbp-0x8]
+    180e:	c9                   	leave
+    180f:	c3                   	ret
+
+0000000000001810 <std::vector<double, std::allocator<double> >::~vector()>:
+    1810:	f3 0f 1e fa          	endbr64
+    1814:	55                   	push   rbp
+    1815:	48 89 e5             	mov    rbp,rsp
+    1818:	48 83 ec 30          	sub    rsp,0x30
+    181c:	48 89 7d d8          	mov    QWORD PTR [rbp-0x28],rdi
+    1820:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1824:	48 89 c7             	mov    rdi,rax
+    1827:	e8 88 03 00 00       	call   1bb4 <std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator()>
+    182c:	48 8b 55 d8          	mov    rdx,QWORD PTR [rbp-0x28]
+    1830:	48 8b 52 08          	mov    rdx,QWORD PTR [rdx+0x8]
+    1834:	48 8b 4d d8          	mov    rcx,QWORD PTR [rbp-0x28]
+    1838:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    183b:	48 89 4d e8          	mov    QWORD PTR [rbp-0x18],rcx
+    183f:	48 89 55 f0          	mov    QWORD PTR [rbp-0x10],rdx
+    1843:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+    1847:	48 8b 55 f0          	mov    rdx,QWORD PTR [rbp-0x10]
+    184b:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    184f:	48 89 d6             	mov    rsi,rdx
+    1852:	48 89 c7             	mov    rdi,rax
+    1855:	e8 59 05 00 00       	call   1db3 <void std::_Destroy<double*>(double*, double*)>
+    185a:	90                   	nop
+    185b:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    185f:	48 89 c7             	mov    rdi,rax
+    1862:	e8 b7 02 00 00       	call   1b1e <std::_Vector_base<double, std::allocator<double> >::~_Vector_base()>
+    1867:	90                   	nop
+    1868:	c9                   	leave
+    1869:	c3                   	ret
+
+000000000000186a <std::vector<double, std::allocator<double> >::operator[](unsigned long)>:
+    186a:	f3 0f 1e fa          	endbr64
+    186e:	55                   	push   rbp
+    186f:	48 89 e5             	mov    rbp,rsp
+    1872:	48 83 ec 10          	sub    rsp,0x10
+    1876:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    187a:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+    187e:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1882:	48 89 c7             	mov    rdi,rax
+    1885:	e8 6a fe ff ff       	call   16f4 <std::vector<double, std::allocator<double> >::size() const>
+    188a:	48 39 45 f0          	cmp    QWORD PTR [rbp-0x10],rax
+    188e:	0f 93 c0             	setae  al
+    1891:	0f b6 c0             	movzx  eax,al
+    1894:	48 85 c0             	test   rax,rax
+    1897:	0f 95 c0             	setne  al
+    189a:	84 c0                	test   al,al
+    189c:	74 22                	je     18c0 <std::vector<double, std::allocator<double> >::operator[](unsigned long)+0x56>
+    189e:	48 8d 0d 87 17 00 00 	lea    rcx,[rip+0x1787]        # 302c <_IO_stdin_used+0x2c>
+    18a5:	48 8d 15 94 18 00 00 	lea    rdx,[rip+0x1894]        # 3140 <_IO_stdin_used+0x140>
+    18ac:	48 8d 05 65 18 00 00 	lea    rax,[rip+0x1865]        # 3118 <_IO_stdin_used+0x118>
+    18b3:	be ef 04 00 00       	mov    esi,0x4ef
+    18b8:	48 89 c7             	mov    rdi,rax
+    18bb:	e8 60 f8 ff ff       	call   1120 <std::__glibcxx_assert_fail(char const*, int, char const*, char const*)@plt>
+    18c0:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    18c4:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    18c7:	48 8b 55 f0          	mov    rdx,QWORD PTR [rbp-0x10]
+    18cb:	48 c1 e2 03          	shl    rdx,0x3
+    18cf:	48 01 d0             	add    rax,rdx
+    18d2:	c9                   	leave
+    18d3:	c3                   	ret
+
+00000000000018d4 <std::chrono::duration<double, std::ratio<1l, 1l> >::duration<long, std::ratio<1l, 1000000000l>, void>(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)>:
+    18d4:	f3 0f 1e fa          	endbr64
+    18d8:	55                   	push   rbp
+    18d9:	48 89 e5             	mov    rbp,rsp
+    18dc:	48 83 ec 20          	sub    rsp,0x20
+    18e0:	48 89 7d e8          	mov    QWORD PTR [rbp-0x18],rdi
+    18e4:	48 89 75 e0          	mov    QWORD PTR [rbp-0x20],rsi
+    18e8:	64 48 8b 04 25 28 00 	mov    rax,QWORD PTR fs:0x28
+    18ef:	00 00 
+    18f1:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+    18f5:	31 c0                	xor    eax,eax
+    18f7:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+    18fb:	48 89 c7             	mov    rdi,rax
+    18fe:	e8 c3 02 00 00       	call   1bc6 <std::enable_if<std::chrono::__is_duration<std::chrono::duration<double, std::ratio<1l, 1l> > >::value, std::chrono::duration<double, std::ratio<1l, 1l> > >::type std::chrono::duration_cast<std::chrono::duration<double, std::ratio<1l, 1l> >, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)>
+    1903:	f2 0f 11 45 f0       	movsd  QWORD PTR [rbp-0x10],xmm0
+    1908:	48 8d 45 f0          	lea    rax,[rbp-0x10]
+    190c:	48 89 c7             	mov    rdi,rax
+    190f:	e8 b4 00 00 00       	call   19c8 <std::chrono::duration<double, std::ratio<1l, 1l> >::count() const>
+    1914:	66 48 0f 7e c0       	movq   rax,xmm0
+    1919:	48 8b 55 e8          	mov    rdx,QWORD PTR [rbp-0x18]
+    191d:	48 89 02             	mov    QWORD PTR [rdx],rax
+    1920:	90                   	nop
+    1921:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1925:	64 48 2b 04 25 28 00 	sub    rax,QWORD PTR fs:0x28
+    192c:	00 00 
+    192e:	74 05                	je     1935 <std::chrono::duration<double, std::ratio<1l, 1l> >::duration<long, std::ratio<1l, 1000000000l>, void>(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)+0x61>
+    1930:	e8 6b f8 ff ff       	call   11a0 <__stack_chk_fail@plt>
+    1935:	c9                   	leave
+    1936:	c3                   	ret
+
+0000000000001937 <std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)>:
+    1937:	f3 0f 1e fa          	endbr64
+    193b:	55                   	push   rbp
+    193c:	48 89 e5             	mov    rbp,rsp
+    193f:	53                   	push   rbx
+    1940:	48 83 ec 48          	sub    rsp,0x48
+    1944:	48 89 7d b8          	mov    QWORD PTR [rbp-0x48],rdi
+    1948:	48 89 75 b0          	mov    QWORD PTR [rbp-0x50],rsi
+    194c:	64 48 8b 04 25 28 00 	mov    rax,QWORD PTR fs:0x28
+    1953:	00 00 
+    1955:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+    1959:	31 c0                	xor    eax,eax
+    195b:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    195f:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    1962:	48 89 45 c8          	mov    QWORD PTR [rbp-0x38],rax
+    1966:	48 8d 45 c8          	lea    rax,[rbp-0x38]
+    196a:	48 89 c7             	mov    rdi,rax
+    196d:	e8 ea fc ff ff       	call   165c <std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const>
+    1972:	48 89 c3             	mov    rbx,rax
+    1975:	48 8b 45 b0          	mov    rax,QWORD PTR [rbp-0x50]
+    1979:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    197c:	48 89 45 d0          	mov    QWORD PTR [rbp-0x30],rax
+    1980:	48 8d 45 d0          	lea    rax,[rbp-0x30]
+    1984:	48 89 c7             	mov    rdi,rax
+    1987:	e8 d0 fc ff ff       	call   165c <std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const>
+    198c:	48 29 c3             	sub    rbx,rax
+    198f:	48 89 da             	mov    rdx,rbx
+    1992:	48 89 55 d8          	mov    QWORD PTR [rbp-0x28],rdx
+    1996:	48 8d 55 d8          	lea    rdx,[rbp-0x28]
+    199a:	48 8d 45 e0          	lea    rax,[rbp-0x20]
+    199e:	48 89 d6             	mov    rsi,rdx
+    19a1:	48 89 c7             	mov    rdi,rax
+    19a4:	e8 91 fc ff ff       	call   163a <std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&)>
+    19a9:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+    19ad:	48 8b 55 e8          	mov    rdx,QWORD PTR [rbp-0x18]
+    19b1:	64 48 2b 14 25 28 00 	sub    rdx,QWORD PTR fs:0x28
+    19b8:	00 00 
+    19ba:	74 05                	je     19c1 <std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)+0x8a>
+    19bc:	e8 df f7 ff ff       	call   11a0 <__stack_chk_fail@plt>
+    19c1:	48 8b 5d f8          	mov    rbx,QWORD PTR [rbp-0x8]
+    19c5:	c9                   	leave
+    19c6:	c3                   	ret
+    19c7:	90                   	nop
+
+00000000000019c8 <std::chrono::duration<double, std::ratio<1l, 1l> >::count() const>:
+    19c8:	f3 0f 1e fa          	endbr64
+    19cc:	55                   	push   rbp
+    19cd:	48 89 e5             	mov    rbp,rsp
+    19d0:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    19d4:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    19d8:	f2 0f 10 00          	movsd  xmm0,QWORD PTR [rax]
+    19dc:	5d                   	pop    rbp
+    19dd:	c3                   	ret
+
+00000000000019de <std::__new_allocator<double>::~__new_allocator()>:
+    19de:	f3 0f 1e fa          	endbr64
+    19e2:	55                   	push   rbp
+    19e3:	48 89 e5             	mov    rbp,rsp
+    19e6:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    19ea:	90                   	nop
+    19eb:	5d                   	pop    rbp
+    19ec:	c3                   	ret
+
+00000000000019ed <std::vector<double, std::allocator<double> >::_S_check_init_len(unsigned long, std::allocator<double> const&)>:
+    19ed:	f3 0f 1e fa          	endbr64
+    19f1:	55                   	push   rbp
+    19f2:	48 89 e5             	mov    rbp,rsp
+    19f5:	53                   	push   rbx
+    19f6:	48 83 ec 48          	sub    rsp,0x48
+    19fa:	48 89 7d b8          	mov    QWORD PTR [rbp-0x48],rdi
+    19fe:	48 89 75 b0          	mov    QWORD PTR [rbp-0x50],rsi
+    1a02:	64 48 8b 04 25 28 00 	mov    rax,QWORD PTR fs:0x28
+    1a09:	00 00 
+    1a0b:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+    1a0f:	31 c0                	xor    eax,eax
+    1a11:	48 8b 45 b0          	mov    rax,QWORD PTR [rbp-0x50]
+    1a15:	48 89 45 d0          	mov    QWORD PTR [rbp-0x30],rax
+    1a19:	48 8d 45 cf          	lea    rax,[rbp-0x31]
+    1a1d:	48 89 45 d8          	mov    QWORD PTR [rbp-0x28],rax
+    1a21:	48 8b 45 d0          	mov    rax,QWORD PTR [rbp-0x30]
+    1a25:	48 89 45 e0          	mov    QWORD PTR [rbp-0x20],rax
+    1a29:	90                   	nop
+    1a2a:	90                   	nop
+    1a2b:	48 8d 45 cf          	lea    rax,[rbp-0x31]
+    1a2f:	48 89 c7             	mov    rdi,rax
+    1a32:	e8 dc 01 00 00       	call   1c13 <std::vector<double, std::allocator<double> >::_S_max_size(std::allocator<double> const&)>
+    1a37:	48 3b 45 b8          	cmp    rax,QWORD PTR [rbp-0x48]
+    1a3b:	0f 92 c3             	setb   bl
+    1a3e:	48 8d 45 cf          	lea    rax,[rbp-0x31]
+    1a42:	48 89 c7             	mov    rdi,rax
+    1a45:	e8 94 ff ff ff       	call   19de <std::__new_allocator<double>::~__new_allocator()>
+    1a4a:	90                   	nop
+    1a4b:	84 db                	test   bl,bl
+    1a4d:	74 23                	je     1a72 <std::vector<double, std::allocator<double> >::_S_check_init_len(unsigned long, std::allocator<double> const&)+0x85>
+    1a4f:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1a53:	64 48 2b 04 25 28 00 	sub    rax,QWORD PTR fs:0x28
+    1a5a:	00 00 
+    1a5c:	74 05                	je     1a63 <std::vector<double, std::allocator<double> >::_S_check_init_len(unsigned long, std::allocator<double> const&)+0x76>
+    1a5e:	e8 3d f7 ff ff       	call   11a0 <__stack_chk_fail@plt>
+    1a63:	48 8d 05 96 17 00 00 	lea    rax,[rip+0x1796]        # 3200 <_IO_stdin_used+0x200>
+    1a6a:	48 89 c7             	mov    rdi,rax
+    1a6d:	e8 ce f6 ff ff       	call   1140 <std::__throw_length_error(char const*)@plt>
+    1a72:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    1a76:	48 8b 55 e8          	mov    rdx,QWORD PTR [rbp-0x18]
+    1a7a:	64 48 2b 14 25 28 00 	sub    rdx,QWORD PTR fs:0x28
+    1a81:	00 00 
+    1a83:	74 05                	je     1a8a <std::vector<double, std::allocator<double> >::_S_check_init_len(unsigned long, std::allocator<double> const&)+0x9d>
+    1a85:	e8 16 f7 ff ff       	call   11a0 <__stack_chk_fail@plt>
+    1a8a:	48 8b 5d f8          	mov    rbx,QWORD PTR [rbp-0x8]
+    1a8e:	c9                   	leave
+    1a8f:	c3                   	ret
+
+0000000000001a90 <std::_Vector_base<double, std::allocator<double> >::_Vector_impl::~_Vector_impl()>:
+    1a90:	f3 0f 1e fa          	endbr64
+    1a94:	55                   	push   rbp
+    1a95:	48 89 e5             	mov    rbp,rsp
+    1a98:	48 83 ec 20          	sub    rsp,0x20
+    1a9c:	48 89 7d e8          	mov    QWORD PTR [rbp-0x18],rdi
+    1aa0:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1aa4:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+    1aa8:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1aac:	48 89 c7             	mov    rdi,rax
+    1aaf:	e8 2a ff ff ff       	call   19de <std::__new_allocator<double>::~__new_allocator()>
+    1ab4:	90                   	nop
+    1ab5:	90                   	nop
+    1ab6:	c9                   	leave
+    1ab7:	c3                   	ret
+
+0000000000001ab8 <std::_Vector_base<double, std::allocator<double> >::_Vector_base(unsigned long, std::allocator<double> const&)>:
+    1ab8:	f3 0f 1e fa          	endbr64
+    1abc:	55                   	push   rbp
+    1abd:	48 89 e5             	mov    rbp,rsp
+    1ac0:	53                   	push   rbx
+    1ac1:	48 83 ec 28          	sub    rsp,0x28
+    1ac5:	48 89 7d e8          	mov    QWORD PTR [rbp-0x18],rdi
+    1ac9:	48 89 75 e0          	mov    QWORD PTR [rbp-0x20],rsi
+    1acd:	48 89 55 d8          	mov    QWORD PTR [rbp-0x28],rdx
+    1ad1:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1ad5:	48 8b 55 d8          	mov    rdx,QWORD PTR [rbp-0x28]
+    1ad9:	48 89 d6             	mov    rsi,rdx
+    1adc:	48 89 c7             	mov    rdi,rax
+    1adf:	e8 b0 01 00 00       	call   1c94 <std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl(std::allocator<double> const&)>
+    1ae4:	48 8b 55 e0          	mov    rdx,QWORD PTR [rbp-0x20]
+    1ae8:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1aec:	48 89 d6             	mov    rsi,rdx
+    1aef:	48 89 c7             	mov    rdi,rax
+    1af2:	e8 e3 01 00 00       	call   1cda <std::_Vector_base<double, std::allocator<double> >::_M_create_storage(unsigned long)>
+    1af7:	eb 1e                	jmp    1b17 <std::_Vector_base<double, std::allocator<double> >::_Vector_base(unsigned long, std::allocator<double> const&)+0x5f>
+    1af9:	f3 0f 1e fa          	endbr64
+    1afd:	48 89 c3             	mov    rbx,rax
+    1b00:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1b04:	48 89 c7             	mov    rdi,rax
+    1b07:	e8 84 ff ff ff       	call   1a90 <std::_Vector_base<double, std::allocator<double> >::_Vector_impl::~_Vector_impl()>
+    1b0c:	48 89 d8             	mov    rax,rbx
+    1b0f:	48 89 c7             	mov    rdi,rax
+    1b12:	e8 c9 f6 ff ff       	call   11e0 <_Unwind_Resume@plt>
+    1b17:	48 8b 5d f8          	mov    rbx,QWORD PTR [rbp-0x8]
+    1b1b:	c9                   	leave
+    1b1c:	c3                   	ret
+    1b1d:	90                   	nop
+
+0000000000001b1e <std::_Vector_base<double, std::allocator<double> >::~_Vector_base()>:
+    1b1e:	f3 0f 1e fa          	endbr64
+    1b22:	55                   	push   rbp
+    1b23:	48 89 e5             	mov    rbp,rsp
+    1b26:	48 83 ec 10          	sub    rsp,0x10
+    1b2a:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1b2e:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1b32:	48 8b 50 10          	mov    rdx,QWORD PTR [rax+0x10]
+    1b36:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1b3a:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    1b3d:	48 29 c2             	sub    rdx,rax
+    1b40:	48 89 d0             	mov    rax,rdx
+    1b43:	48 c1 f8 03          	sar    rax,0x3
+    1b47:	48 89 c2             	mov    rdx,rax
+    1b4a:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1b4e:	48 8b 08             	mov    rcx,QWORD PTR [rax]
+    1b51:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1b55:	48 89 ce             	mov    rsi,rcx
+    1b58:	48 89 c7             	mov    rdi,rax
+    1b5b:	e8 d4 01 00 00       	call   1d34 <std::_Vector_base<double, std::allocator<double> >::_M_deallocate(double*, unsigned long)>
+    1b60:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1b64:	48 89 c7             	mov    rdi,rax
+    1b67:	e8 24 ff ff ff       	call   1a90 <std::_Vector_base<double, std::allocator<double> >::_Vector_impl::~_Vector_impl()>
+    1b6c:	90                   	nop
+    1b6d:	c9                   	leave
+    1b6e:	c3                   	ret
+    1b6f:	90                   	nop
+
+0000000000001b70 <std::vector<double, std::allocator<double> >::_M_default_initialize(unsigned long)>:
+    1b70:	f3 0f 1e fa          	endbr64
+    1b74:	55                   	push   rbp
+    1b75:	48 89 e5             	mov    rbp,rsp
+    1b78:	48 83 ec 10          	sub    rsp,0x10
+    1b7c:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1b80:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+    1b84:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1b88:	48 89 c7             	mov    rdi,rax
+    1b8b:	e8 24 00 00 00       	call   1bb4 <std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator()>
+    1b90:	48 89 c2             	mov    rdx,rax
+    1b93:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1b97:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    1b9a:	48 8b 4d f0          	mov    rcx,QWORD PTR [rbp-0x10]
+    1b9e:	48 89 ce             	mov    rsi,rcx
+    1ba1:	48 89 c7             	mov    rdi,rax
+    1ba4:	e8 dd 01 00 00       	call   1d86 <double* std::__uninitialized_default_n_a<double*, unsigned long, double>(double*, unsigned long, std::allocator<double>&)>
+    1ba9:	48 8b 55 f8          	mov    rdx,QWORD PTR [rbp-0x8]
+    1bad:	48 89 42 08          	mov    QWORD PTR [rdx+0x8],rax
+    1bb1:	90                   	nop
+    1bb2:	c9                   	leave
+    1bb3:	c3                   	ret
+
+0000000000001bb4 <std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator()>:
+    1bb4:	f3 0f 1e fa          	endbr64
+    1bb8:	55                   	push   rbp
+    1bb9:	48 89 e5             	mov    rbp,rsp
+    1bbc:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1bc0:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1bc4:	5d                   	pop    rbp
+    1bc5:	c3                   	ret
+
+0000000000001bc6 <std::enable_if<std::chrono::__is_duration<std::chrono::duration<double, std::ratio<1l, 1l> > >::value, std::chrono::duration<double, std::ratio<1l, 1l> > >::type std::chrono::duration_cast<std::chrono::duration<double, std::ratio<1l, 1l> >, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)>:
+    1bc6:	f3 0f 1e fa          	endbr64
+    1bca:	55                   	push   rbp
+    1bcb:	48 89 e5             	mov    rbp,rsp
+    1bce:	48 83 ec 10          	sub    rsp,0x10
+    1bd2:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1bd6:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1bda:	48 89 c7             	mov    rdi,rax
+    1bdd:	e8 e4 01 00 00       	call   1dc6 <std::chrono::duration<double, std::ratio<1l, 1l> > std::chrono::__duration_cast_impl<std::chrono::duration<double, std::ratio<1l, 1l> >, std::ratio<1l, 1000000000l>, double, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)>
+    1be2:	c9                   	leave
+    1be3:	c3                   	ret
+
+0000000000001be4 <unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)>:
+    1be4:	f3 0f 1e fa          	endbr64
+    1be8:	55                   	push   rbp
+    1be9:	48 89 e5             	mov    rbp,rsp
+    1bec:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1bf0:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+    1bf4:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1bf8:	48 8b 10             	mov    rdx,QWORD PTR [rax]
+    1bfb:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1bff:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    1c02:	48 39 c2             	cmp    rdx,rax
+    1c05:	73 06                	jae    1c0d <unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)+0x29>
+    1c07:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1c0b:	eb 04                	jmp    1c11 <unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)+0x2d>
+    1c0d:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1c11:	5d                   	pop    rbp
+    1c12:	c3                   	ret
+
+0000000000001c13 <std::vector<double, std::allocator<double> >::_S_max_size(std::allocator<double> const&)>:
+    1c13:	f3 0f 1e fa          	endbr64
+    1c17:	55                   	push   rbp
+    1c18:	48 89 e5             	mov    rbp,rsp
+    1c1b:	48 83 ec 40          	sub    rsp,0x40
+    1c1f:	48 89 7d c8          	mov    QWORD PTR [rbp-0x38],rdi
+    1c23:	64 48 8b 04 25 28 00 	mov    rax,QWORD PTR fs:0x28
+    1c2a:	00 00 
+    1c2c:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+    1c30:	31 c0                	xor    eax,eax
+    1c32:	48 b8 ff ff ff ff ff 	movabs rax,0xfffffffffffffff
+    1c39:	ff ff 0f 
+    1c3c:	48 89 45 d0          	mov    QWORD PTR [rbp-0x30],rax
+    1c40:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+    1c44:	48 89 45 e0          	mov    QWORD PTR [rbp-0x20],rax
+    1c48:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+    1c4c:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+    1c50:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1c54:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+    1c58:	48 b8 ff ff ff ff ff 	movabs rax,0xfffffffffffffff
+    1c5f:	ff ff 0f 
+    1c62:	90                   	nop
+    1c63:	90                   	nop
+    1c64:	48 89 45 d8          	mov    QWORD PTR [rbp-0x28],rax
+    1c68:	48 8d 55 d8          	lea    rdx,[rbp-0x28]
+    1c6c:	48 8d 45 d0          	lea    rax,[rbp-0x30]
+    1c70:	48 89 d6             	mov    rsi,rdx
+    1c73:	48 89 c7             	mov    rdi,rax
+    1c76:	e8 69 ff ff ff       	call   1be4 <unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)>
+    1c7b:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    1c7e:	48 8b 55 f8          	mov    rdx,QWORD PTR [rbp-0x8]
+    1c82:	64 48 2b 14 25 28 00 	sub    rdx,QWORD PTR fs:0x28
+    1c89:	00 00 
+    1c8b:	74 05                	je     1c92 <std::vector<double, std::allocator<double> >::_S_max_size(std::allocator<double> const&)+0x7f>
+    1c8d:	e8 0e f5 ff ff       	call   11a0 <__stack_chk_fail@plt>
+    1c92:	c9                   	leave
+    1c93:	c3                   	ret
+
+0000000000001c94 <std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl(std::allocator<double> const&)>:
+    1c94:	f3 0f 1e fa          	endbr64
+    1c98:	55                   	push   rbp
+    1c99:	48 89 e5             	mov    rbp,rsp
+    1c9c:	48 83 ec 30          	sub    rsp,0x30
+    1ca0:	48 89 7d d8          	mov    QWORD PTR [rbp-0x28],rdi
+    1ca4:	48 89 75 d0          	mov    QWORD PTR [rbp-0x30],rsi
+    1ca8:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1cac:	48 89 45 e0          	mov    QWORD PTR [rbp-0x20],rax
+    1cb0:	48 8b 45 d0          	mov    rax,QWORD PTR [rbp-0x30]
+    1cb4:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+    1cb8:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+    1cbc:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+    1cc0:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1cc4:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+    1cc8:	90                   	nop
+    1cc9:	90                   	nop
+    1cca:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1cce:	48 89 c7             	mov    rdi,rax
+    1cd1:	e8 64 01 00 00       	call   1e3a <std::_Vector_base<double, std::allocator<double> >::_Vector_impl_data::_Vector_impl_data()>
+    1cd6:	90                   	nop
+    1cd7:	c9                   	leave
+    1cd8:	c3                   	ret
+    1cd9:	90                   	nop
+
+0000000000001cda <std::_Vector_base<double, std::allocator<double> >::_M_create_storage(unsigned long)>:
+    1cda:	f3 0f 1e fa          	endbr64
+    1cde:	55                   	push   rbp
+    1cdf:	48 89 e5             	mov    rbp,rsp
+    1ce2:	48 83 ec 10          	sub    rsp,0x10
+    1ce6:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1cea:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+    1cee:	48 8b 55 f0          	mov    rdx,QWORD PTR [rbp-0x10]
+    1cf2:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1cf6:	48 89 d6             	mov    rsi,rdx
+    1cf9:	48 89 c7             	mov    rdi,rax
+    1cfc:	e8 6b 01 00 00       	call   1e6c <std::_Vector_base<double, std::allocator<double> >::_M_allocate(unsigned long)>
+    1d01:	48 8b 55 f8          	mov    rdx,QWORD PTR [rbp-0x8]
+    1d05:	48 89 02             	mov    QWORD PTR [rdx],rax
+    1d08:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1d0c:	48 8b 10             	mov    rdx,QWORD PTR [rax]
+    1d0f:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1d13:	48 89 50 08          	mov    QWORD PTR [rax+0x8],rdx
+    1d17:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1d1b:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    1d1e:	48 8b 55 f0          	mov    rdx,QWORD PTR [rbp-0x10]
+    1d22:	48 c1 e2 03          	shl    rdx,0x3
+    1d26:	48 01 c2             	add    rdx,rax
+    1d29:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1d2d:	48 89 50 10          	mov    QWORD PTR [rax+0x10],rdx
+    1d31:	90                   	nop
+    1d32:	c9                   	leave
+    1d33:	c3                   	ret
+
+0000000000001d34 <std::_Vector_base<double, std::allocator<double> >::_M_deallocate(double*, unsigned long)>:
+    1d34:	f3 0f 1e fa          	endbr64
+    1d38:	55                   	push   rbp
+    1d39:	48 89 e5             	mov    rbp,rsp
+    1d3c:	48 83 ec 40          	sub    rsp,0x40
+    1d40:	48 89 7d d8          	mov    QWORD PTR [rbp-0x28],rdi
+    1d44:	48 89 75 d0          	mov    QWORD PTR [rbp-0x30],rsi
+    1d48:	48 89 55 c8          	mov    QWORD PTR [rbp-0x38],rdx
+    1d4c:	48 83 7d d0 00       	cmp    QWORD PTR [rbp-0x30],0x0
+    1d51:	74 30                	je     1d83 <std::_Vector_base<double, std::allocator<double> >::_M_deallocate(double*, unsigned long)+0x4f>
+    1d53:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1d57:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+    1d5b:	48 8b 45 d0          	mov    rax,QWORD PTR [rbp-0x30]
+    1d5f:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+    1d63:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+    1d67:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+    1d6b:	48 8b 55 f8          	mov    rdx,QWORD PTR [rbp-0x8]
+    1d6f:	48 8b 4d f0          	mov    rcx,QWORD PTR [rbp-0x10]
+    1d73:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1d77:	48 89 ce             	mov    rsi,rcx
+    1d7a:	48 89 c7             	mov    rdi,rax
+    1d7d:	e8 88 01 00 00       	call   1f0a <std::__new_allocator<double>::deallocate(double*, unsigned long)>
+    1d82:	90                   	nop
+    1d83:	90                   	nop
+    1d84:	c9                   	leave
+    1d85:	c3                   	ret
+
+0000000000001d86 <double* std::__uninitialized_default_n_a<double*, unsigned long, double>(double*, unsigned long, std::allocator<double>&)>:
+    1d86:	f3 0f 1e fa          	endbr64
+    1d8a:	55                   	push   rbp
+    1d8b:	48 89 e5             	mov    rbp,rsp
+    1d8e:	48 83 ec 20          	sub    rsp,0x20
+    1d92:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1d96:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+    1d9a:	48 89 55 e8          	mov    QWORD PTR [rbp-0x18],rdx
+    1d9e:	48 8b 55 f0          	mov    rdx,QWORD PTR [rbp-0x10]
+    1da2:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1da6:	48 89 d6             	mov    rsi,rdx
+    1da9:	48 89 c7             	mov    rdi,rax
+    1dac:	e8 08 01 00 00       	call   1eb9 <double* std::__uninitialized_default_n<double*, unsigned long>(double*, unsigned long)>
+    1db1:	c9                   	leave
+    1db2:	c3                   	ret
+
+0000000000001db3 <void std::_Destroy<double*>(double*, double*)>:
+    1db3:	f3 0f 1e fa          	endbr64
+    1db7:	55                   	push   rbp
+    1db8:	48 89 e5             	mov    rbp,rsp
+    1dbb:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1dbf:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+    1dc3:	90                   	nop
+    1dc4:	5d                   	pop    rbp
+    1dc5:	c3                   	ret
+
+0000000000001dc6 <std::chrono::duration<double, std::ratio<1l, 1l> > std::chrono::__duration_cast_impl<std::chrono::duration<double, std::ratio<1l, 1l> >, std::ratio<1l, 1000000000l>, double, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)>:
+    1dc6:	f3 0f 1e fa          	endbr64
+    1dca:	55                   	push   rbp
+    1dcb:	48 89 e5             	mov    rbp,rsp
+    1dce:	48 83 ec 30          	sub    rsp,0x30
+    1dd2:	48 89 7d d8          	mov    QWORD PTR [rbp-0x28],rdi
+    1dd6:	64 48 8b 04 25 28 00 	mov    rax,QWORD PTR fs:0x28
+    1ddd:	00 00 
+    1ddf:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+    1de3:	31 c0                	xor    eax,eax
+    1de5:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1de9:	48 89 c7             	mov    rdi,rax
+    1dec:	e8 6b f8 ff ff       	call   165c <std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const>
+    1df1:	66 0f ef c0          	pxor   xmm0,xmm0
+    1df5:	f2 48 0f 2a c0       	cvtsi2sd xmm0,rax
+    1dfa:	f2 0f 10 0d 3e 14 00 	movsd  xmm1,QWORD PTR [rip+0x143e]        # 3240 <_IO_stdin_used+0x240>
+    1e01:	00 
+    1e02:	f2 0f 5e c1          	divsd  xmm0,xmm1
+    1e06:	f2 0f 11 45 e8       	movsd  QWORD PTR [rbp-0x18],xmm0
+    1e0b:	48 8d 55 e8          	lea    rdx,[rbp-0x18]
+    1e0f:	48 8d 45 f0          	lea    rax,[rbp-0x10]
+    1e13:	48 89 d6             	mov    rsi,rdx
+    1e16:	48 89 c7             	mov    rdi,rax
+    1e19:	e8 c8 00 00 00       	call   1ee6 <std::chrono::duration<double, std::ratio<1l, 1l> >::duration<double, void>(double const&)>
+    1e1e:	f2 0f 10 45 f0       	movsd  xmm0,QWORD PTR [rbp-0x10]
+    1e23:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1e27:	64 48 2b 04 25 28 00 	sub    rax,QWORD PTR fs:0x28
+    1e2e:	00 00 
+    1e30:	74 05                	je     1e37 <std::chrono::duration<double, std::ratio<1l, 1l> > std::chrono::__duration_cast_impl<std::chrono::duration<double, std::ratio<1l, 1l> >, std::ratio<1l, 1000000000l>, double, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)+0x71>
+    1e32:	e8 69 f3 ff ff       	call   11a0 <__stack_chk_fail@plt>
+    1e37:	c9                   	leave
+    1e38:	c3                   	ret
+    1e39:	90                   	nop
+
+0000000000001e3a <std::_Vector_base<double, std::allocator<double> >::_Vector_impl_data::_Vector_impl_data()>:
+    1e3a:	f3 0f 1e fa          	endbr64
+    1e3e:	55                   	push   rbp
+    1e3f:	48 89 e5             	mov    rbp,rsp
+    1e42:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1e46:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1e4a:	48 c7 00 00 00 00 00 	mov    QWORD PTR [rax],0x0
+    1e51:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1e55:	48 c7 40 08 00 00 00 	mov    QWORD PTR [rax+0x8],0x0
+    1e5c:	00 
+    1e5d:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1e61:	48 c7 40 10 00 00 00 	mov    QWORD PTR [rax+0x10],0x0
+    1e68:	00 
+    1e69:	90                   	nop
+    1e6a:	5d                   	pop    rbp
+    1e6b:	c3                   	ret
+
+0000000000001e6c <std::_Vector_base<double, std::allocator<double> >::_M_allocate(unsigned long)>:
+    1e6c:	f3 0f 1e fa          	endbr64
+    1e70:	55                   	push   rbp
+    1e71:	48 89 e5             	mov    rbp,rsp
+    1e74:	48 83 ec 20          	sub    rsp,0x20
+    1e78:	48 89 7d e8          	mov    QWORD PTR [rbp-0x18],rdi
+    1e7c:	48 89 75 e0          	mov    QWORD PTR [rbp-0x20],rsi
+    1e80:	48 83 7d e0 00       	cmp    QWORD PTR [rbp-0x20],0x0
+    1e85:	74 2b                	je     1eb2 <std::_Vector_base<double, std::allocator<double> >::_M_allocate(unsigned long)+0x46>
+    1e87:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1e8b:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+    1e8f:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+    1e93:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+    1e97:	48 8b 4d f8          	mov    rcx,QWORD PTR [rbp-0x8]
+    1e9b:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1e9f:	ba 00 00 00 00       	mov    edx,0x0
+    1ea4:	48 89 ce             	mov    rsi,rcx
+    1ea7:	48 89 c7             	mov    rdi,rax
+    1eaa:	e8 9b 01 00 00       	call   204a <std::__new_allocator<double>::allocate(unsigned long, void const*)>
+    1eaf:	90                   	nop
+    1eb0:	eb 05                	jmp    1eb7 <std::_Vector_base<double, std::allocator<double> >::_M_allocate(unsigned long)+0x4b>
+    1eb2:	b8 00 00 00 00       	mov    eax,0x0
+    1eb7:	c9                   	leave
+    1eb8:	c3                   	ret
+
+0000000000001eb9 <double* std::__uninitialized_default_n<double*, unsigned long>(double*, unsigned long)>:
+    1eb9:	f3 0f 1e fa          	endbr64
+    1ebd:	55                   	push   rbp
+    1ebe:	48 89 e5             	mov    rbp,rsp
+    1ec1:	48 83 ec 20          	sub    rsp,0x20
+    1ec5:	48 89 7d e8          	mov    QWORD PTR [rbp-0x18],rdi
+    1ec9:	48 89 75 e0          	mov    QWORD PTR [rbp-0x20],rsi
+    1ecd:	c6 45 ff 01          	mov    BYTE PTR [rbp-0x1],0x1
+    1ed1:	48 8b 55 e0          	mov    rdx,QWORD PTR [rbp-0x20]
+    1ed5:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1ed9:	48 89 d6             	mov    rsi,rdx
+    1edc:	48 89 c7             	mov    rdi,rax
+    1edf:	e8 5b 00 00 00       	call   1f3f <double* std::__uninitialized_default_n_1<true>::__uninit_default_n<double*, unsigned long>(double*, unsigned long)>
+    1ee4:	c9                   	leave
+    1ee5:	c3                   	ret
+
+0000000000001ee6 <std::chrono::duration<double, std::ratio<1l, 1l> >::duration<double, void>(double const&)>:
+    1ee6:	f3 0f 1e fa          	endbr64
+    1eea:	55                   	push   rbp
+    1eeb:	48 89 e5             	mov    rbp,rsp
+    1eee:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1ef2:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+    1ef6:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1efa:	f2 0f 10 00          	movsd  xmm0,QWORD PTR [rax]
+    1efe:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1f02:	f2 0f 11 00          	movsd  QWORD PTR [rax],xmm0
+    1f06:	90                   	nop
+    1f07:	5d                   	pop    rbp
+    1f08:	c3                   	ret
+    1f09:	90                   	nop
+
+0000000000001f0a <std::__new_allocator<double>::deallocate(double*, unsigned long)>:
+    1f0a:	f3 0f 1e fa          	endbr64
+    1f0e:	55                   	push   rbp
+    1f0f:	48 89 e5             	mov    rbp,rsp
+    1f12:	48 83 ec 20          	sub    rsp,0x20
+    1f16:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1f1a:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+    1f1e:	48 89 55 e8          	mov    QWORD PTR [rbp-0x18],rdx
+    1f22:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1f26:	48 8d 14 c5 00 00 00 	lea    rdx,[rax*8+0x0]
+    1f2d:	00 
+    1f2e:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1f32:	48 89 d6             	mov    rsi,rdx
+    1f35:	48 89 c7             	mov    rdi,rax
+    1f38:	e8 53 f2 ff ff       	call   1190 <operator delete(void*, unsigned long)@plt>
+    1f3d:	c9                   	leave
+    1f3e:	c3                   	ret
+
+0000000000001f3f <double* std::__uninitialized_default_n_1<true>::__uninit_default_n<double*, unsigned long>(double*, unsigned long)>:
+    1f3f:	f3 0f 1e fa          	endbr64
+    1f43:	55                   	push   rbp
+    1f44:	48 89 e5             	mov    rbp,rsp
+    1f47:	48 83 ec 70          	sub    rsp,0x70
+    1f4b:	48 89 7d 98          	mov    QWORD PTR [rbp-0x68],rdi
+    1f4f:	48 89 75 90          	mov    QWORD PTR [rbp-0x70],rsi
+    1f53:	64 48 8b 04 25 28 00 	mov    rax,QWORD PTR fs:0x28
+    1f5a:	00 00 
+    1f5c:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+    1f60:	31 c0                	xor    eax,eax
+    1f62:	48 83 7d 90 00       	cmp    QWORD PTR [rbp-0x70],0x0
+    1f67:	0f 84 c2 00 00 00    	je     202f <double* std::__uninitialized_default_n_1<true>::__uninit_default_n<double*, unsigned long>(double*, unsigned long)+0xf0>
+    1f6d:	48 8b 45 98          	mov    rax,QWORD PTR [rbp-0x68]
+    1f71:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+    1f75:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1f79:	48 89 45 a8          	mov    QWORD PTR [rbp-0x58],rax
+    1f7d:	48 8b 45 a8          	mov    rax,QWORD PTR [rbp-0x58]
+    1f81:	48 89 c7             	mov    rdi,rax
+    1f84:	e8 2c 01 00 00       	call   20b5 <void std::_Construct<double>(double*)>
+    1f89:	48 83 45 98 08       	add    QWORD PTR [rbp-0x68],0x8
+    1f8e:	48 8b 45 90          	mov    rax,QWORD PTR [rbp-0x70]
+    1f92:	48 8d 50 ff          	lea    rdx,[rax-0x1]
+    1f96:	48 8b 45 98          	mov    rax,QWORD PTR [rbp-0x68]
+    1f9a:	48 89 45 a0          	mov    QWORD PTR [rbp-0x60],rax
+    1f9e:	48 89 55 b0          	mov    QWORD PTR [rbp-0x50],rdx
+    1fa2:	48 8b 45 a8          	mov    rax,QWORD PTR [rbp-0x58]
+    1fa6:	48 89 45 b8          	mov    QWORD PTR [rbp-0x48],rax
+    1faa:	90                   	nop
+    1fab:	48 8b 45 b0          	mov    rax,QWORD PTR [rbp-0x50]
+    1faf:	48 89 c7             	mov    rdi,rax
+    1fb2:	e8 70 f6 ff ff       	call   1627 <std::__size_to_integer(unsigned long)>
+    1fb7:	48 8b 55 a0          	mov    rdx,QWORD PTR [rbp-0x60]
+    1fbb:	48 89 55 c0          	mov    QWORD PTR [rbp-0x40],rdx
+    1fbf:	48 89 45 c8          	mov    QWORD PTR [rbp-0x38],rax
+    1fc3:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    1fc7:	48 89 45 d0          	mov    QWORD PTR [rbp-0x30],rax
+    1fcb:	48 83 7d c8 00       	cmp    QWORD PTR [rbp-0x38],0x0
+    1fd0:	75 06                	jne    1fd8 <double* std::__uninitialized_default_n_1<true>::__uninit_default_n<double*, unsigned long>(double*, unsigned long)+0x99>
+    1fd2:	48 8b 45 c0          	mov    rax,QWORD PTR [rbp-0x40]
+    1fd6:	eb 52                	jmp    202a <double* std::__uninitialized_default_n_1<true>::__uninit_default_n<double*, unsigned long>(double*, unsigned long)+0xeb>
+    1fd8:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+    1fdc:	48 8d 14 c5 00 00 00 	lea    rdx,[rax*8+0x0]
+    1fe3:	00 
+    1fe4:	48 8b 45 c0          	mov    rax,QWORD PTR [rbp-0x40]
+    1fe8:	48 01 c2             	add    rdx,rax
+    1feb:	48 8b 45 c0          	mov    rax,QWORD PTR [rbp-0x40]
+    1fef:	48 89 45 d8          	mov    QWORD PTR [rbp-0x28],rax
+    1ff3:	48 89 55 e0          	mov    QWORD PTR [rbp-0x20],rdx
+    1ff7:	48 8b 45 d0          	mov    rax,QWORD PTR [rbp-0x30]
+    1ffb:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+    1fff:	48 8b 55 e8          	mov    rdx,QWORD PTR [rbp-0x18]
+    2003:	48 8b 4d e0          	mov    rcx,QWORD PTR [rbp-0x20]
+    2007:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    200b:	48 89 ce             	mov    rsi,rcx
+    200e:	48 89 c7             	mov    rdi,rax
+    2011:	e8 e4 00 00 00       	call   20fa <void std::__fill_a1<double*, double>(double*, double*, double const&)>
+    2016:	90                   	nop
+    2017:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+    201b:	48 8d 14 c5 00 00 00 	lea    rdx,[rax*8+0x0]
+    2022:	00 
+    2023:	48 8b 45 c0          	mov    rax,QWORD PTR [rbp-0x40]
+    2027:	48 01 d0             	add    rax,rdx
+    202a:	90                   	nop
+    202b:	48 89 45 98          	mov    QWORD PTR [rbp-0x68],rax
+    202f:	48 8b 45 98          	mov    rax,QWORD PTR [rbp-0x68]
+    2033:	48 8b 55 f8          	mov    rdx,QWORD PTR [rbp-0x8]
+    2037:	64 48 2b 14 25 28 00 	sub    rdx,QWORD PTR fs:0x28
+    203e:	00 00 
+    2040:	74 05                	je     2047 <double* std::__uninitialized_default_n_1<true>::__uninit_default_n<double*, unsigned long>(double*, unsigned long)+0x108>
+    2042:	e8 59 f1 ff ff       	call   11a0 <__stack_chk_fail@plt>
+    2047:	c9                   	leave
+    2048:	c3                   	ret
+    2049:	90                   	nop
+
+000000000000204a <std::__new_allocator<double>::allocate(unsigned long, void const*)>:
+    204a:	f3 0f 1e fa          	endbr64
+    204e:	55                   	push   rbp
+    204f:	48 89 e5             	mov    rbp,rsp
+    2052:	48 83 ec 30          	sub    rsp,0x30
+    2056:	48 89 7d e8          	mov    QWORD PTR [rbp-0x18],rdi
+    205a:	48 89 75 e0          	mov    QWORD PTR [rbp-0x20],rsi
+    205e:	48 89 55 d8          	mov    QWORD PTR [rbp-0x28],rdx
+    2062:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    2066:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+    206a:	48 b8 ff ff ff ff ff 	movabs rax,0xfffffffffffffff
+    2071:	ff ff 0f 
+    2074:	48 3b 45 e0          	cmp    rax,QWORD PTR [rbp-0x20]
+    2078:	0f 92 c0             	setb   al
+    207b:	0f b6 c0             	movzx  eax,al
+    207e:	48 85 c0             	test   rax,rax
+    2081:	0f 95 c0             	setne  al
+    2084:	84 c0                	test   al,al
+    2086:	74 1a                	je     20a2 <std::__new_allocator<double>::allocate(unsigned long, void const*)+0x58>
+    2088:	48 b8 ff ff ff ff ff 	movabs rax,0x1fffffffffffffff
+    208f:	ff ff 1f 
+    2092:	48 3b 45 e0          	cmp    rax,QWORD PTR [rbp-0x20]
+    2096:	73 05                	jae    209d <std::__new_allocator<double>::allocate(unsigned long, void const*)+0x53>
+    2098:	e8 b3 f0 ff ff       	call   1150 <std::__throw_bad_array_new_length()@plt>
+    209d:	e8 8e f0 ff ff       	call   1130 <std::__throw_bad_alloc()@plt>
+    20a2:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+    20a6:	48 c1 e0 03          	shl    rax,0x3
+    20aa:	48 89 c7             	mov    rdi,rax
+    20ad:	e8 ce f0 ff ff       	call   1180 <operator new(unsigned long)@plt>
+    20b2:	90                   	nop
+    20b3:	c9                   	leave
+    20b4:	c3                   	ret
+
+00000000000020b5 <void std::_Construct<double>(double*)>:
+    20b5:	f3 0f 1e fa          	endbr64
+    20b9:	55                   	push   rbp
+    20ba:	48 89 e5             	mov    rbp,rsp
+    20bd:	53                   	push   rbx
+    20be:	48 83 ec 18          	sub    rsp,0x18
+    20c2:	48 89 7d e8          	mov    QWORD PTR [rbp-0x18],rdi
+    20c6:	48 8b 5d e8          	mov    rbx,QWORD PTR [rbp-0x18]
+    20ca:	48 89 de             	mov    rsi,rbx
+    20cd:	bf 08 00 00 00       	mov    edi,0x8
+    20d2:	e8 27 f5 ff ff       	call   15fe <operator new(unsigned long, void*)>
+    20d7:	66 0f ef c0          	pxor   xmm0,xmm0
+    20db:	f2 0f 11 00          	movsd  QWORD PTR [rax],xmm0
+    20df:	ba 00 00 00 00       	mov    edx,0x0
+    20e4:	84 d2                	test   dl,dl
+    20e6:	74 0b                	je     20f3 <void std::_Construct<double>(double*)+0x3e>
+    20e8:	48 89 de             	mov    rsi,rbx
+    20eb:	48 89 c7             	mov    rdi,rax
+    20ee:	e8 21 f5 ff ff       	call   1614 <operator delete(void*, void*)>
+    20f3:	90                   	nop
+    20f4:	48 8b 5d f8          	mov    rbx,QWORD PTR [rbp-0x8]
+    20f8:	c9                   	leave
+    20f9:	c3                   	ret
+
+00000000000020fa <void std::__fill_a1<double*, double>(double*, double*, double const&)>:
+    20fa:	f3 0f 1e fa          	endbr64
+    20fe:	55                   	push   rbp
+    20ff:	48 89 e5             	mov    rbp,rsp
+    2102:	48 89 7d e8          	mov    QWORD PTR [rbp-0x18],rdi
+    2106:	48 89 75 e0          	mov    QWORD PTR [rbp-0x20],rsi
+    210a:	48 89 55 d8          	mov    QWORD PTR [rbp-0x28],rdx
+    210e:	c6 45 f7 01          	mov    BYTE PTR [rbp-0x9],0x1
+    2112:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    2116:	f2 0f 10 00          	movsd  xmm0,QWORD PTR [rax]
+    211a:	f2 0f 11 45 f8       	movsd  QWORD PTR [rbp-0x8],xmm0
+    211f:	eb 12                	jmp    2133 <void std::__fill_a1<double*, double>(double*, double*, double const&)+0x39>
+    2121:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    2125:	f2 0f 10 45 f8       	movsd  xmm0,QWORD PTR [rbp-0x8]
+    212a:	f2 0f 11 00          	movsd  QWORD PTR [rax],xmm0
+    212e:	48 83 45 e8 08       	add    QWORD PTR [rbp-0x18],0x8
+    2133:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    2137:	48 3b 45 e0          	cmp    rax,QWORD PTR [rbp-0x20]
+    213b:	75 e4                	jne    2121 <void std::__fill_a1<double*, double>(double*, double*, double const&)+0x27>
+    213d:	90                   	nop
+    213e:	90                   	nop
+    213f:	5d                   	pop    rbp
+    2140:	c3                   	ret
+
+Disassembly of section .fini:
+
+0000000000002144 <_fini>:
+    2144:	f3 0f 1e fa          	endbr64
+    2148:	48 83 ec 08          	sub    rsp,0x8
+    214c:	48 83 c4 08          	add    rsp,0x8
+    2150:	c3                   	ret
